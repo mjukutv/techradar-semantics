@@ -1,6 +1,5 @@
 //This is the title for your window tab, and your Radar
-document.title = "Semantic Web Tech Radar (evolving version)";
-var radar_title = "Semantic Web Tech Radar (evolving version)";
+var radar_title = document.title;
 
 //This is the concentic circles that want on your radar
 var radar_arcs = [
@@ -8,7 +7,7 @@ var radar_arcs = [
                   ,{'r':200,'name':'Trial'}
                   ,{'r':300,'name':'Assess'}
                   ,{'r':400,'name':'Hold'}
-                 // ,{'r':500,'name':'Possible Extra if you want it'}
+                  ,{'r':500,'name':'Out Of Scope'}
                  ];
 
 //This is your raw data
@@ -45,11 +44,11 @@ var radar_arcs = [
 // - Hold: things that are getting attention in the industry, but not ready for use; sometimes they are not mature enough yet, sometimes they are irredeemably flawed
 //      Note: there's no "avoid" ring, but throw things in the hold ring that people shouldn't use.
 
-var h = 1000;
-var w = 1200;
+var h = 1200;
+var w = 1000;
 
 var radar_data = [
-    { "quadrant": "Techniques",
+    { "quadrant": "WIP (Work In Progress)",
         "left" : 45,
         "top" : 18,
         "color" : "#8FA227",
@@ -73,10 +72,48 @@ var radar_data = [
 			{"name":"Platform roadmaps", "pc":{"r":30,"t":100},"movement":"c"},   
 			{"name":"Build pipelines", "pc":{"r":30,"t":160},"movement":"c"} 
 		*/
-			{"name":"TBD", "pc":{"r":30,"t":135},"movement":"c"} 
-        ]
+			{"name":"Concept: Linked Data (LD)", "pc":{"r":150,"t":135},"movement":"c"},
+
+			{"name":"Concept: Web Ontology Language (OWL)", "pc":{"r":405,"t":105},"movement":"c"},
+			{"name":"Concept: Vocabulary of Interlinked Datasets (VoID)", "pc":{"r":405,"t":110},"movement":"c"},
+			
+			{"name":"Concept: RDF Database (Big Data, Big Region, Semantic Data Lake)", "pc":{"r":405,"t":160},"movement":"c"},
+			/*
+			{"name":"RDF Database: Neo4j", "pc":{"r":440,"t":150},"movement":"c"},
+			{"name":"RDF Database: Virtuoso", "pc":{"r":440,"t":156},"movement":"c"},
+			{"name":"RDF Database: MarkLogic", "pc":{"r":440,"t":162},"movement":"c"},
+			{"name":"RDF Database: InfiniteGraph", "pc":{"r":440,"t":168},"movement":"c"},
+			{"name":"RDF Database: Ontotext", "pc":{"r":452,"t":153},"movement":"c"},
+			{"name":"RDF Database: AllegroGraph", "pc":{"r":452,"t":159},"movement":"c"},
+			{"name":"RDF Database: Stardog", "pc":{"r":452,"t":165},"movement":"c"},
+			{"name":"RDF Database: Titan", "pc":{"r":460,"t":156},"movement":"c"},
+			*/
+			
+			{"name":"Technique: Accessing LD: Data Dump", "pc":{"r":315,"t":93},"movement":"c"},
+			{"name":"Technique: Accessing LD: Subject Page", "pc":{"r":315,"t":97},"movement":"c"},
+			{"name":"Technique: Accessing LD: SPARQL", "pc":{"r":305,"t":95},"movement":"c"},
+			{"name":"Technique: Accessing LD: Tripple Pattern Fragments", "pc":{"r":210,"t":95},"movement":"c"},
+			
+
+			{"name":"Representation: RDF", "pc":{"r":260,"t":105},"movement":"c"},
+			{"name":"Representation: Hydra", "pc":{"r":225,"t":105},"movement":"c"},
+			
+			{"name":"Format: JSON-LD", "pc":{"r":220,"t":125},"movement":"c"},
+			{"name":"Format: Microformats", "pc":{"r":280,"t":128},"movement":"c"},
+			{"name":"Format: Xml-like (RDFa, RDF/XML)", "pc":{"r":305,"t":124},"movement":"c"},
+			{"name":"Format: Turtle-like (Turtle, TriG, N-Triples, N-Quads)", "pc":{"r":305,"t":128},"movement":"c"},
+			{"name":"Format: Notation3", "pc":{"r":305,"t":132},"movement":"c"},
+			
+			{"name":"Platforms: LOD Laundromat", "pc":{"r":250,"t":155},"movement":"c"},
+			{"name":"Platforms: Linked Data Fragments", "pc":{"r":250,"t":160},"movement":"c"},
+
+			{"name":"Tools: Linked Open Vocabularies", "pc":{"r":250,"t":175},"movement":"c"},
+			{"name":"Tools: datahub.io", "pc":{"r":250,"t":170},"movement":"c"},
+			{"name":"Tools: lodlive.it", "pc":{"r":305,"t":175},"movement":"c"},
+			{"name":"Tools: SPARQLGraph", "pc":{"r":305,"t":175},"movement":"c"},
+		]
     },
-	{ "quadrant": "Tools",
+	{ "quadrant": "TBD",
         "left": w-200+30,
         "top" : 18,
         "color" : "#587486",
@@ -100,11 +137,11 @@ var radar_data = [
 			{"name":"Squid", "pc":{"r":80,"t":85},"movement":"c"},   
 			{"name":"ASP.NET MVC", "pc":{"r":80,"t":10},"movement":"c"},   
 			{"name":"Subversion", "pc":{"r":30,"t":30},"movement":"c"}
+			{"name":"Linked Data Fragments", "pc":{"r":250,"t":45},"movement":"c"}
 			*/
-			{"name":"TBD", "pc":{"r":30,"t":45},"movement":"c"} 
 		]
 	},
-	{ "quadrant": "Platforms",
+	{ "quadrant": "TBD ",
         "left" :45,
          "top" : (h/2 + 18),
         "color" : "#DC6F1D",
@@ -134,11 +171,11 @@ var radar_data = [
 			{"name":"Atom", "pc":{"r":70,"t":245},"movement":"t"},   
 			{"name":"ALT.NET", "pc":{"r":90,"t":190},"movement":"c"},   
 			{"name":"IE6 End of Life", "pc":{"r":30,"t":225},"movement":"c"}
+			{"name":"Linked Open Vocabularies", "pc":{"r":250,"t":225},"movement":"c"} 
 			*/
-			{"name":"TBD", "pc":{"r":30,"t":225},"movement":"c"} 
 		]
 	},
-	{ "quadrant": "Formats",
+	{ "quadrant": "TBD  ",
         "color" : "#B70062",
         "left"  : (w-200+30),
         "top" :   (h/2 + 18),
@@ -155,8 +192,8 @@ var radar_data = [
 			{"name":"JRuby", "pc":{"r":90,"t":330},"movement":"c"},   
 			{"name":"Javascript as a 1st class language", "pc":{"r":90,"t":275},"movement":"c"},   
 			{"name":"Ruby", "pc":{"r":30,"t":282},"movement":"c"}
+			{"name":"Topic Maps", "pc":{"r":250,"t":315},"movement":"c"} 
 			*/
-			{"name":"TBD", "pc":{"r":30,"t":315},"movement":"c"} 
 		]
 	}
 ];
