@@ -48,152 +48,87 @@ var h = 1200;
 var w = 1000;
 
 var radar_data = [
-    { "quadrant": "WIP (Work In Progress)",
+    { "quadrant": "Techniques",
         "left" : 45,
         "top" : 18,
         "color" : "#8FA227",
         "items" : [ 
-		/*
-			{"name":"Database based Integration", "pc":{"r":350,"t":135},"movement":"t"},
-		    {"name":"Scrum certification", "pc":{"r":350,"t":95},"movement":"c"},
-		    {"name":"Incremental data warehousing", "pc":{"r":250,"t":165},"movement":"c"},    
-		    {"name":"DevOps", "pc":{"r":250,"t":110},"movement":"c"},    
-		    {"name":"Polygot Programming", "pc":{"r":180,"t":170},"movement":"c"},    
-		    {"name":"Automation of technical tests", "pc":{"r":180,"t":155},"movement":"c"},    
-			{"name":"Capability modelling", "pc":{"r":180,"t":125},"movement":"c"},   
-			{"name":"Service choreography", "pc":{"r":180,"t":105},"movement":"c"},   
-			{"name":"Continuous deployment", "pc":{"r":180,"t":100},"movement":"c"},   
-			{"name":"Evolutionary architecture", "pc":{"r":120,"t":95},"movement":"c"},   
-			{"name":"Coding architects", "pc":{"r":90,"t":170},"movement":"c"},   
-			{"name":"Visualisation and metrics", "pc":{"r":80,"t":150},"movement":"c"},   
-			{"name":"Web as platform", "pc":{"r":80,"t":110},"movement":"c"},   
-			{"name":"Emergent design", "pc":{"r":80,"t":100},"movement":"c"},   
-			{"name":"Evolutionary database", "pc":{"r":70,"t":170},"movement":"c"},   
-			{"name":"Platform roadmaps", "pc":{"r":30,"t":100},"movement":"c"},   
-			{"name":"Build pipelines", "pc":{"r":30,"t":160},"movement":"c"} 
-		*/
-			{"name":"Concept: Linked Data (LD)", "pc":{"r":150,"t":135},"movement":"c"},
+			{"name":"Concept: Linked Data (LD)", "pc":{"r":210,"t":110},"movement":"c"},
 
-			{"name":"Concept: Web Ontology Language (OWL)", "pc":{"r":405,"t":105},"movement":"c"},
-			{"name":"Concept: Vocabulary of Interlinked Datasets (VoID)", "pc":{"r":405,"t":110},"movement":"c"},
+			{"name":/*"Concept: Web Ontology Language (OWL)"*/ "Concept: OWL", "pc":{"r":445,"t":102},"movement":"c"},
+			{"name":/*"Concept: Vocabulary of Interlinked Datasets (VoID)"*/ "Concept: VoID", "pc":{"r":445,"t":110},"movement":"c"},
+			{"name":/*"Concept: RDF Database (Big Data/Region, Semantic Data Lake)"*/ "Concept: RDF DB", "pc":{"r":465,"t":106},"movement":"c"},
 			
-			{"name":"Concept: RDF Database (Big Data, Big Region, Semantic Data Lake)", "pc":{"r":405,"t":160},"movement":"c"},
-			/*
-			{"name":"RDF Database: Neo4j", "pc":{"r":440,"t":150},"movement":"c"},
-			{"name":"RDF Database: Virtuoso", "pc":{"r":440,"t":156},"movement":"c"},
-			{"name":"RDF Database: MarkLogic", "pc":{"r":440,"t":162},"movement":"c"},
-			{"name":"RDF Database: InfiniteGraph", "pc":{"r":440,"t":168},"movement":"c"},
-			{"name":"RDF Database: Ontotext", "pc":{"r":452,"t":153},"movement":"c"},
-			{"name":"RDF Database: AllegroGraph", "pc":{"r":452,"t":159},"movement":"c"},
-			{"name":"RDF Database: Stardog", "pc":{"r":452,"t":165},"movement":"c"},
-			{"name":"RDF Database: Titan", "pc":{"r":460,"t":156},"movement":"c"},
-			*/
-			
-			{"name":"Technique: Accessing LD: Data Dump", "pc":{"r":315,"t":93},"movement":"c"},
-			{"name":"Technique: Accessing LD: Subject Page", "pc":{"r":315,"t":97},"movement":"c"},
-			{"name":"Technique: Accessing LD: SPARQL", "pc":{"r":305,"t":95},"movement":"c"},
-			{"name":"Technique: Accessing LD: Tripple Pattern Fragments", "pc":{"r":210,"t":95},"movement":"c"},
+			{"name":"LD Query: Tripple Pattern Fragments", "pc":{"r":220,"t":130},"movement":"c"},
+			{"name":"LD Query: Data Dump", "pc":{"r":355,"t":125},"movement":"c"},
+			{"name":"LD Query: Subject Page", "pc":{"r":355,"t":130},"movement":"c"},
+			{"name":"LD Query: SPARQL", "pc":{"r":335,"t":127},"movement":"c"},
 			
 
-			{"name":"Representation: RDF", "pc":{"r":260,"t":105},"movement":"c"},
-			{"name":"Representation: Hydra", "pc":{"r":225,"t":105},"movement":"c"},
+			{"name":"LD Struct: Hydra", "pc":{"r":240,"t":150},"movement":"c"},
+			{"name":"LD Struct: RDF", "pc":{"r":310,"t":150},"movement":"c"},
 			
-			{"name":"Format: JSON-LD", "pc":{"r":220,"t":125},"movement":"c"},
-			{"name":"Format: Microformats", "pc":{"r":280,"t":128},"movement":"c"},
-			{"name":"Format: Xml-like (RDFa, RDF/XML)", "pc":{"r":305,"t":124},"movement":"c"},
-			{"name":"Format: Turtle-like (Turtle, TriG, N-Triples, N-Quads)", "pc":{"r":305,"t":128},"movement":"c"},
-			{"name":"Format: Notation3", "pc":{"r":305,"t":132},"movement":"c"},
 			
-			{"name":"Platforms: LOD Laundromat", "pc":{"r":250,"t":155},"movement":"c"},
-			{"name":"Platforms: Linked Data Fragments", "pc":{"r":250,"t":160},"movement":"c"},
-
-			{"name":"Tools: Linked Open Vocabularies", "pc":{"r":250,"t":175},"movement":"c"},
-			{"name":"Tools: datahub.io", "pc":{"r":250,"t":170},"movement":"c"},
-			{"name":"Tools: lodlive.it", "pc":{"r":305,"t":175},"movement":"c"},
-			{"name":"Tools: SPARQLGraph", "pc":{"r":305,"t":175},"movement":"c"},
 		]
     },
-	{ "quadrant": "TBD",
+	{ "quadrant": "Tools",
         "left": w-200+30,
         "top" : 18,
         "color" : "#587486",
 		"items" : [ 
-		/*
-			{"name":"ESB", "pc":{"r":390,"t":20},"movement":"t"},   
-			{"name":"Intentional Programming", "pc":{"r":310,"t":10},"movement":"c"},   
-			{"name":"Cross mobile platforms", "pc":{"r":280,"t":85},"movement":"c"},   
-			{"name":"Github", "pc":{"r":280,"t":70},"movement":"c"},   
-			{"name":"Restfulie", "pc":{"r":280,"t":50},"movement":"c"},   
-			{"name":"RDF triple stores", "pc":{"r":280,"t":30},"movement":"c"},   
-			{"name":"Apache camel", "pc":{"r":180,"t":85},"movement":"c"},   
-			{"name":"Next gen test tools", "pc":{"r":180,"t":75},"movement":"c"},   
-			{"name":"NoSQL", "pc":{"r":180,"t":65},"movement":"c"},   
-			{"name":"Neo4j", "pc":{"r":180,"t":50},"movement":"c"},   
-			{"name":"Message busses without smarts", "pc":{"r":160,"t":85},"movement":"c"},   
-			{"name":"Puppet", "pc":{"r":130,"t":85},"movement":"c"},   
-			{"name":"mongoDB", "pc":{"r":130,"t":55},"movement":"c"},   
-			{"name":"Mercurial", "pc":{"r":130,"t":30},"movement":"c"},   
-			{"name":"Git", "pc":{"r":130,"t":15},"movement":"c"},   
-			{"name":"Squid", "pc":{"r":80,"t":85},"movement":"c"},   
-			{"name":"ASP.NET MVC", "pc":{"r":80,"t":10},"movement":"c"},   
-			{"name":"Subversion", "pc":{"r":30,"t":30},"movement":"c"}
-			{"name":"Linked Data Fragments", "pc":{"r":250,"t":45},"movement":"c"}
+			{"name":"lodlive.it", "pc":{"r":280,"t":85},"movement":"c"},
+			{"name":"SPARQLGraph", "pc":{"r":280,"t":80},"movement":"c"},
+			{"name":"CKAN", "pc":{"r":280,"t":75},"movement":"c"},
+			{"name":"LODStats", "pc":{"r":280,"t":70},"movement":"c"},
+			{"name":"Linda Project", "pc":{"r":280,"t":65},"movement":"c"},
+			{"name":"Swirrl", "pc":{"r":280,"t":60},"movement":"c"},
+			{"name":"SADI framework", "pc":{"r":320,"t":85},"movement":"c"},
+
+			{"name":"RDF DB: Neo4j", "pc":{"r":420,"t":6},"movement":"c"},
+			{"name":"RDF DB: Virtuoso", "pc":{"r":420,"t":9},"movement":"c"},
+			{"name":"RDF DB: MarkLogic", "pc":{"r":420,"t":12},"movement":"c"},
+			{"name":"RDF DB: InfiniteGraph", "pc":{"r":440,"t":8},"movement":"c"},
+			{"name":"RDF DB: Ontotext", "pc":{"r":440,"t":11},"movement":"c"},
+			{"name":"RDF DB: AllegroGraph", "pc":{"r":460,"t":6},"movement":"c"},
+			{"name":"RDF DB: Stardog", "pc":{"r":460,"t":9},"movement":"c"},
+			{"name":"RDF DB: Titan", "pc":{"r":460,"t":12},"movement":"c"},
+
+			/*
+			{"name":"http://vivoweb.org/", "pc":{"r":295,"t":145},"movement":"c"},
+			{"name":"http://ontologydesignpatterns.org/", "pc":{"r":245,"t":155},"movement":"c"},
+			{"name":"http://nomisma.org/", "pc":{"r":420,"t":85},"movement":"c"},
 			*/
 		]
 	},
-	{ "quadrant": "TBD ",
+	{ "quadrant": "Platforms ",
         "left" :45,
-         "top" : (h/2 + 18),
+        "top" : (h/2 + 18),
         "color" : "#DC6F1D",
 		"items" : [
-		/*
-			{"name":"Rich internet applications", "pc":{"r":390,"t":265},"movement":"c"},   
-			{"name":"GWT", "pc":{"r":390,"t":250},"movement":"c"},   
-			{"name":"IE8", "pc":{"r":390,"t":230},"movement":"c"},   
-			{"name":"WS-* beyond basic profile", "pc":{"r":390,"t":190},"movement":"c"},   
-			{"name":"Azure", "pc":{"r":290,"t":265},"movement":"c"},   
-			{"name":"Mobile Web", "pc":{"r":275,"t":260},"movement":"t"},   
-			{"name":"Google App Engine", "pc":{"r":290,"t":255},"movement":"c"},   
-			{"name":"Application appliances", "pc":{"r":190,"t":245},"movement":"c"},   
-			{"name":"Google as corporate platform", "pc":{"r":290,"t":200},"movement":"c"},   
-			{"name":"GPGPU", "pc":{"r":190,"t":185},"movement":"t"},   
-			{"name":"App containers", "pc":{"r":250,"t":260},"movement":"c"},   
-			{"name":"OAuth", "pc":{"r":130,"t":260},"movement":"t"},   
-			{"name":"RDFa", "pc":{"r":130,"t":250},"movement":"t"},   
-			{"name":"Location based services", "pc":{"r":130,"t":230},"movement":"c"},   
-			{"name":"iPad", "pc":{"r":130,"t":220},"movement":"c"},   
-			{"name":"EC2 & S3", "pc":{"r":190,"t":250},"movement":"c"},   
-			{"name":"Facebook as a business platform", "pc":{"r":190,"t":190},"movement":"c"},   
-			{"name":"JVM as platform", "pc":{"r":90,"t":265},"movement":"c"},   
-			{"name":"iPhone", "pc":{"r":90,"t":215},"movement":"c"},   
-			{"name":"Android", "pc":{"r":90,"t":190},"movement":"c"},   
-			{"name":"KVM", "pc":{"r":70,"t":260},"movement":"t"},   
-			{"name":"Atom", "pc":{"r":70,"t":245},"movement":"t"},   
-			{"name":"ALT.NET", "pc":{"r":90,"t":190},"movement":"c"},   
-			{"name":"IE6 End of Life", "pc":{"r":30,"t":225},"movement":"c"}
-			{"name":"Linked Open Vocabularies", "pc":{"r":250,"t":225},"movement":"c"} 
-			*/
+			{"name":"LOD Laundromat", "pc":{"r":220,"t":190},"movement":"c"},
+			{"name":"Linked Data Fragments", "pc":{"r":220,"t":200},"movement":"c"},
+			
+			{"name":"Schema.org", "pc":{"r":280,"t":190},"movement":"c"},
+			{"name":"Web Data Commons", "pc":{"r":280,"t":195},"movement":"c"},
+			{"name":"Datahub", "pc":{"r":280,"t":200},"movement":"c"},
+			{"name":"Linked Open Vocabularies", "pc":{"r":280,"t":205},"movement":"c"},
+			{"name":"UMBEL", "pc":{"r":280,"t":185},"movement":"c"},
+
+			{"name":"Open Semantic Framework", "pc":{"r":320,"t":185},"movement":"c"},
 		]
 	},
-	{ "quadrant": "TBD  ",
+	{ "quadrant": "Formats",
         "color" : "#B70062",
         "left"  : (w-200+30),
         "top" :   (h/2 + 18),
 		"items" : [ 
-		/*
-			{"name":"Java language end of life", "pc":{"r":290,"t":355},"movement":"c"},   
-			{"name":"F#", "pc":{"r":270,"t":330},"movement":"c"},   
-			{"name":"Scala", "pc":{"r":290,"t":320},"movement":"c"},   
-			{"name":"Clojure", "pc":{"r":260,"t":310},"movement":"c"},   
-			{"name":"HTML 5", "pc":{"r":250,"t":275},"movement":"c"},   
-			{"name":"DSLs", "pc":{"r":190,"t":340},"movement":"c"},   
-			{"name":"Groovy", "pc":{"r":190,"t":280},"movement":"c"},   
-			{"name":"C#4", "pc":{"r":90,"t":355},"movement":"c"},   
-			{"name":"JRuby", "pc":{"r":90,"t":330},"movement":"c"},   
-			{"name":"Javascript as a 1st class language", "pc":{"r":90,"t":275},"movement":"c"},   
-			{"name":"Ruby", "pc":{"r":30,"t":282},"movement":"c"}
-			{"name":"Topic Maps", "pc":{"r":250,"t":315},"movement":"c"} 
-			*/
+			{"name":"JSON-LD", "pc":{"r":220,"t":310},"movement":"c"},
+
+			{"name":"Microformats", "pc":{"r":310,"t":305},"movement":"c"},
+			{"name":"HDT", "pc":{"r":310,"t":315},"movement":"c"},
+			{"name":/*"Xml-like (RDFa, RDF/XML)"*/"Xml-like", "pc":{"r":345,"t":300},"movement":"c"},
+			{"name":/*"Turtle-like (Turtle, TriG, N-Triples, N-Quads)"*/ "Turtle-like", "pc":{"r":365,"t":310},"movement":"c"},
+			{"name":"Notation3", "pc":{"r":350,"t":320},"movement":"c"},
 		]
 	}
 ];
